@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "724993737832",
+    "project_id": "western-pivot-318506",
+    "storage_bucket": "western-pivot-318506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724993737832:android:93bda917ae5ef4a6bb27dd",
+        "android_client_info": {
+          "package_name": "com.example.earthquakenotifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724993737832-d7bb3ro79pbsoej3gvo80nuqkmvdcogr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAflmr5-j4dc0uNqf9mI7YlD0_AJCVGhaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724993737832-d7bb3ro79pbsoej3gvo80nuqkmvdcogr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
