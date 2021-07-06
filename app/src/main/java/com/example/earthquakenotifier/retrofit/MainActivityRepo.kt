@@ -6,14 +6,12 @@ import com.example.earthquakenotifier.Model.QuakeList
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.util.logging.Handler
 
 object MainActivityRepo {
     private var quakeList = MutableLiveData<List<Earthquake>>()
 
     fun getServiceCall() : Call<QuakeList> {
-        val call = RetrofitClient.retroInterface.getData()
-        return call
+        return RetrofitClient.retroInterface.getData()
     }
 
     fun loadData(call : Call<QuakeList>) : MutableLiveData<List<Earthquake>> {

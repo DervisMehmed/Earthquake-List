@@ -32,36 +32,28 @@ class LocationInfoScreen : AppCompatActivity()
         setContentView(R.layout.activity_location_info_screen)
         quakeInfo = findViewById(R.id.earthquakeInfo)
         mapView = findViewById(R.id.mapView)
-
         context = this@LocationInfoScreen
-
         obj = intent.extras?.get("Object") as Earthquake
-
         position = LatLng(obj!!.latitude, obj!!.longitude)
         markerOptions = MarkerOptions().position(position)
-
         //  Filling the info text field
         quakeInfo.text = obj.toString()
 
         with(mapView)
         {
             onCreate(null)
-
             getMapAsync{
                 MapsInitializer.initialize(applicationContext)
                 setMapLocation(it)
             }
         }
-
     }
 
     private fun setMapLocation(map : GoogleMap) {
         with(map) {
-            moveCamera(CameraUpdateFactory.newLatLngZoom(position, 13f))
+            moveCamera(CameraUpdateFactory.newLatLngZoom(position, 10f))
             mapType = GoogleMap.MAP_TYPE_NORMAL
-
             marker = addMarker(markerOptions)
-
         }
     }
 
@@ -69,17 +61,14 @@ class LocationInfoScreen : AppCompatActivity()
         super.onResume()
         mapView.onResume()
     }
-
     override fun onPause() {
         super.onPause()
         mapView.onPause()
     }
-
     override fun onDestroy() {
         super.onDestroy()
         mapView.onDestroy()
     }
-
     override fun onLowMemory() {
         super.onLowMemory()
         mapView.onLowMemory()

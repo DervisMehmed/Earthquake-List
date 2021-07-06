@@ -8,10 +8,8 @@ import android.os.Handler
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.lifecycle.ViewModelProvider
-import com.example.earthquakenotifier.Model.Earthquake
-import com.example.earthquakenotifier.ViewModel.MainActivityViewModel
+import com.example.earthquakenotifier.ui.MainActivityViewModel
 import java.io.Serializable
-import androidx.lifecycle.Observer as Observer1
 
 class MainActivity : AppCompatActivity()
 {

@@ -1,5 +1,7 @@
 package com.example.earthquakenotifier.Model
 
+import android.text.style.RelativeSizeSpan
+import androidx.core.text.toSpannable
 import java.io.Serializable
 
 data class Earthquake(val date: String, val latitude: Double, val longitude: Double,
@@ -8,7 +10,7 @@ data class Earthquake(val date: String, val latitude: Double, val longitude: Dou
 {
 
     override fun toString(): String {
-        return "Date: $date\nLocation: $latitude - $longitude\nDepth: $depth" +
-                "\nMagnitude: $md , $ml , $mw\nPlace: $place\nStatus: ${status.replace('Ý', 'I')}\n"
+        return "Date:\t\t$date\n\nLocation:\t\t$latitude - $longitude\nDepth:\t\t$depth" +
+                "\nMagnitude:\t\t$md,\t$ml,\t$mw\nPlace:\t\t$place\nStatus:\t\t${status.replace('Ý', 'I')}\n"
     }
 }
