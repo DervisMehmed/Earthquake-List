@@ -20,7 +20,7 @@ import java.io.Serializable
 class MainScreen : Fragment() {
     private var quakeList = MutableLiveData<List<Earthquake>>()
     private lateinit var viewModel: MainScreenViewModel
-    private lateinit var listViewAdapter: ArrayAdapter<*>
+    private lateinit var listViewAdapter: CardViewAdapter
     private lateinit var quakeListView: ListView
     private lateinit var root: View
 
@@ -40,7 +40,7 @@ class MainScreen : Fragment() {
 
         quakeList.observe(viewLifecycleOwner, Observer {
             listViewAdapter = activity?.let {
-                    it1 -> ArrayAdapter(it1.applicationContext, android.R.layout.simple_list_item_1, it) }!!
+                    it1 -> CardViewAdapter(it1.applicationContext, it) }!!
             quakeListView.adapter = listViewAdapter
         })
 

@@ -20,7 +20,10 @@
             android:id="@+id/earthquakeInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#5180443F" />
+            android:background="#BA8D89"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"

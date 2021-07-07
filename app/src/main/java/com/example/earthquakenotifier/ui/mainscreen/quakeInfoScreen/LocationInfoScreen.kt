@@ -38,8 +38,7 @@ class LocationInfoScreen : AppCompatActivity() {
         markerOptions = MarkerOptions().position(position)
         quakeInfo.text = obj.toString()
 
-        with(mapView)
-        {
+        with(mapView) {
             onCreate(null)
             getMapAsync{
                 MapsInitializer.initialize(applicationContext)

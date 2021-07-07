@@ -23,12 +23,11 @@ class MainScreenViewModel : ViewModel() {
     }
 
     private fun loadData(call : Call<QuakeList>) : MutableLiveData<List<Earthquake>> {
-        call?.enqueue(object  : Callback<QuakeList> {
+        call.enqueue(object  : Callback<QuakeList> {
 
             override fun onResponse(call: Call<QuakeList>, response: Response<QuakeList>) {
                 val body = response.body()
-                if (body != null)
-                {
+                if (body != null) {
                     quakeList.postValue(body.earthquakes)
                 }
             }
