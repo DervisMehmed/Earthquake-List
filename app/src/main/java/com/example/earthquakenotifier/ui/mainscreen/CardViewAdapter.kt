@@ -34,10 +34,10 @@ class CardViewAdapter(var context: Context, var quakeList: List<Earthquake>) : B
 
         val quake: Earthquake = quakeList[position]
 
-        quakeDate.text =  "Date:\t${quake.date}"
-        quakeDepth.text = "Depth:\t${quake.depth}"
-        quakeMagnitude.text = "Magnitude:\t${quake.ml}"
-        quakePlace.text = "Place:\t${quake.place}"
+        quakeDate.text = quake.date
+        quakeDepth.text = quake.depth.toString() + " km"
+        quakeMagnitude.text = quake.ml
+        quakePlace.text = quake.place
         return view
     }
 }

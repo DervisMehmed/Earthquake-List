@@ -24,6 +24,7 @@ class LocationInfoScreen : AppCompatActivity() {
     lateinit var marker : Marker
 
     private lateinit var obj : Earthquake
+    private lateinit var activityTitle: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +34,8 @@ class LocationInfoScreen : AppCompatActivity() {
 
         context = this@LocationInfoScreen
         obj = intent.extras?.get("Object") as Earthquake
+        activityTitle = obj.place
+        this.title = activityTitle
 
         position = LatLng(obj.latitude, obj.longitude)
         markerOptions = MarkerOptions().position(position)

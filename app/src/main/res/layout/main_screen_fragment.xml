@@ -10,15 +10,12 @@
         android:id="@+id/entryListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
         android:dividerHeight="3dp"
-        android:paddingLeft="3dp"
-        android:paddingTop="3dp"
-        android:paddingEnd="3dp"
-        android:paddingRight="3dp"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/quake_card_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Earthquakenotifier" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Earthquakenotifier" parent="Theme.MaterialComponents.DayNight">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#D63E3E</item>
         <item name="colorPrimaryVariant">#D5772020</item>
