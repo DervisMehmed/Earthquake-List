@@ -21,5 +21,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-
-// TODO: hazirlanmis location info card i nasil info screen a gomulur

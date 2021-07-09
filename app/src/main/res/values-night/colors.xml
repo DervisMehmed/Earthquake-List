@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="circle0">#B2EBF2</color>
+    <color name="stroke_circle0">#CCB2EBF2</color>
+    <color name="circle1">#81C784</color>
+    <color name="stroke_circle1">#CC81C784</color>
+    <color name="circle2">#9CCC65</color>
+    <color name="stroke_circle2">#CC9CCC65</color>
+    <color name="circle3">#DCE775</color>
+    <color name="stroke_circle3">#CCDCE775</color>
+    <color name="circle4">#DDBA4B</color>
+    <color name="stroke_circle4">#CCDDBA4B</color>
+    <color name="circle5">#FF8543</color>
+    <color name="stroke_circle5">#CCFF8543</color>
+    <color name="circle6">#CF6237</color>
+    <color name="stroke_circle6">#CCCF6237</color>
+    <color name="circle7">#B71C1C</color>
+    <color name="stroke_circle7">#CCB71C1C</color>
+    <color name="circle8">#D51D1D</color>
+    <color name="stroke_circle8">#CCD51D1D</color>
+    <color name="circle9">#971717</color>
+    <color name="stroke_circle9">#CC971717</color>
     <color name="divider_color">#999999</color>
 </resources>

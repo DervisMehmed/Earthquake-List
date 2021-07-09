@@ -23,7 +23,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginVertical="10dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/circle"
+                android:src="@drawable/circle1"
                 android:textAlignment="center" />
 
             <TextView

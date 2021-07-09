@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">earthquakenotifier</string>
-    <string name="map_key" translatable="false">INSERT_MAP_API_KEY</string>
+    <string name="app_name">Earthquake Notifier</string>
+    <string name="map_key" translatable="false">AIzaSyAflmr5-j4dc0uNqf9mI7YlD0_AJCVGhaU</string>
 </resources>

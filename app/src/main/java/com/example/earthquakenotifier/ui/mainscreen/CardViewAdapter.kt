@@ -10,6 +10,7 @@ import android.widget.TextView
 import com.example.earthquakenotifier.Model.Earthquake
 import com.example.earthquakenotifier.R
 
+
 class CardViewAdapter(var context: Context, var quakeList: List<Earthquake>) : BaseAdapter() {
 
     override fun getCount(): Int {
@@ -31,13 +32,27 @@ class CardViewAdapter(var context: Context, var quakeList: List<Earthquake>) : B
         val quakeDepth: TextView = view.findViewById(R.id.textViewDepth)
         val quakeMagnitude: TextView = view.findViewById(R.id.textViewMagnitude)
         val quakePlace: TextView = view.findViewById(R.id.textViewPlace)
-
+        val quakeCircle: ImageView = view.findViewById(R.id.imageViewLocMag)
         val quake: Earthquake = quakeList[position]
 
         quakeDate.text = quake.date
         quakeDepth.text = quake.depth.toString() + " km"
         quakeMagnitude.text = quake.ml
         quakePlace.text = quake.place
+        with(quakeCircle) {
+            when((quake.ml.toDouble()).toInt()){
+                0, 1 -> setImageResource(R.drawable.circle0)
+                2 -> setImageResource(R.drawable.circle1)
+                3 -> setImageResource(R.drawable.circle2)
+                4 -> setImageResource(R.drawable.circle3)
+                5 -> setImageResource(R.drawable.circle4)
+                6 -> setImageResource(R.drawable.circle5)
+                7 -> setImageResource(R.drawable.circle6)
+                8 -> setImageResource(R.drawable.circle7)
+                9 -> setImageResource(R.drawable.circle8)
+                10-> setImageResource(R.drawable.circle9)
+            }
+        }
         return view
     }
 }
