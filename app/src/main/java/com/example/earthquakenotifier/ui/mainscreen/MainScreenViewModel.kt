@@ -11,9 +11,10 @@ import retrofit2.Response
 
 class MainScreenViewModel : ViewModel() {
     private lateinit var call : Call<QuakeList>
-    private var quakeList = MutableLiveData<List<Earthquake>>()
+    var quakeList = MutableLiveData<List<Earthquake>>()
+    private lateinit var actualList: List<Earthquake>
 
-    fun loadLiveData(): MutableLiveData<List<Earthquake>> {
+    fun loadLiveData() : MutableLiveData<List<Earthquake>> {
         this.call = getServiceCall()
         return loadData(call)
     }
@@ -22,7 +23,7 @@ class MainScreenViewModel : ViewModel() {
         return RetrofitClient.retroInterface.getData()
     }
 
-    private fun loadData(call : Call<QuakeList>) : MutableLiveData<List<Earthquake>> {
+    private fun loadData(call : Call<QuakeList>) :MutableLiveData<List<Earthquake>> {
         call.enqueue(object  : Callback<QuakeList> {
 
             override fun onResponse(call: Call<QuakeList>, response: Response<QuakeList>) {

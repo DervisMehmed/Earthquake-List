@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Earthquake Notifier</string>
     <string name="map_key" translatable="false">AIzaSyAflmr5-j4dc0uNqf9mI7YlD0_AJCVGhaU</string>
+
+    <style name="BottomSheetItem">
+        <item name="android:textSize">20sp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+    </style>
 </resources>
