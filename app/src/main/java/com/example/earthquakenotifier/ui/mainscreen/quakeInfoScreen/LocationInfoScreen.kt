@@ -47,7 +47,7 @@ class LocationInfoScreen : AppCompatActivity() {
         initUI()
         context = this@LocationInfoScreen
 
-        obj = intent.extras?.get("Object") as Earthquake
+        obj = intent.extras?.get("QUAKECARD") as Earthquake
         loadUI(obj)
         this.title = obj.place
 

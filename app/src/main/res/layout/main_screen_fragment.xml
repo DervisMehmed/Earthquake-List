@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.mainscreen.MainScreen">
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/entryListView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:dividerHeight="3dp"
         android:padding="5dp"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
