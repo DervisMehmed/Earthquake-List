@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         mainScreen = MainScreen()
         this.title = mainActivityTitle
 
-        if(savedInstanceState == null) { // initial transaction should be wrapped like this
+        if(savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.root_container, mainScreen)
                 .commitAllowingStateLoss()
