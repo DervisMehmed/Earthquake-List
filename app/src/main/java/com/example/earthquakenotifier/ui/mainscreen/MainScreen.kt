@@ -64,6 +64,7 @@ class MainScreen : Fragment() {
                 }
             }
         }
+
         return root
     }
 }
